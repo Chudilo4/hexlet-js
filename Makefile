@@ -13,9 +13,17 @@ install_package:
 #Обновление зависимостей
 update_dependencies:
 	npm update
-#Установка зависимости для разработки "автоформатер"
-install_dev_dependencie:
+#Установка "автоформатер"
+install_dev_formater:
 	npm install --save-dev prettier
-#Запуск программы из виртуального окружения
-run_prettier:
+#Установка "линтера"
+install_dev_linter:
+	npm install --save-dev eslint
+	npx eslint --init
+#Запуск форматера
+formater:
 	npx prettier --write .
+#Запуск линтера
+linter:
+	npx eslint .
+	npx eslint . --fix
