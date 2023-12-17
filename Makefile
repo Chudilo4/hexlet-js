@@ -10,4 +10,12 @@ start:
 #Установка библиотеки
 install_package:
 	npm install lodash
-
+#Обновление зависимостей
+update_dependencies:
+	npm update
+#Установка зависимости для разработки "автоформатер"
+install_dev_dependencie:
+	npm install --save-dev prettier
+#Запуск программы из виртуального окружения
+run_prettier:
+	npx prettier --write .
