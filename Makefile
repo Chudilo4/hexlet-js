@@ -6,7 +6,7 @@ install_dependencies:
 	npm ci
 #Запуск приложения
 start:
-	node index.js
+	node main.js
 #Установка библиотеки
 install_package:
 	npm install lodash
